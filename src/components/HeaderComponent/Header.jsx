@@ -1,9 +1,14 @@
-import '../HeaderComponent/header.css'
+import "../HeaderComponent/header.css";
+import {AgentContext} from "../ContextComponent/contextAgent"
+import { useContext } from "react";
 
-const Header=()=>{
-    return(<div className="header">
-This is header
-    </div>)
-}
+const Header = () => {
+    const ValuesFromContext = useContext(AgentContext);
+  return (
+    <div className="header">
+      This is header {ValuesFromContext.agentName}
+    </div>
+  );
+};
 
-export default Header
+export default Header;

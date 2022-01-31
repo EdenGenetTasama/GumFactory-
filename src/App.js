@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import AppRouting from './Routing';
+import logo from "./logo.svg";
+import "./App.css";
+import AppRouting from "./Routing";
+import ContextProvider from "./components/ContextComponent/contextAgent";
 
 function App() {
   return (
     <div className="App">
-     <AppRouting/>
+      <ContextProvider>
+        <AppRouting />
+      </ContextProvider>
     </div>
   );
 }
