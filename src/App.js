@@ -5,9 +5,7 @@ import AppRouting from './Routing';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
      <AppRouting/>
-      </header>
     </div>
   );
 }

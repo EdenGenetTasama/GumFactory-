@@ -1,0 +1,6 @@
+.menuGrid{
+    grid-area: menu;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}

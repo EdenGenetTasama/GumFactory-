@@ -1,9 +1,10 @@
+import '../HomeComponent/Home.css'
 
 
 const Home = () => {
 
 
-  return <div>Home component</div>;
+  return <div className="mainInfoGrid">Home component</div>;
 };
 
 export default Home;
