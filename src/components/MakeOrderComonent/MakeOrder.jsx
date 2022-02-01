@@ -17,13 +17,13 @@ const MakeOrder = () => {
   };
 
   const OnClickFunction=()=>{
-    valuesOfContext(...valuesOfContext);
+    valuesOfContext({...valuesOfContext});
     console.log(valuesOfContext)
   }
 
   return (
     <div>
-      <h1>this is Make Order component</h1>
+      <h1>This is Make Order component</h1>
       {/* {valuesOfContext.numberOfOrders} */}
       Agent name: <input type="text" onChange={AgentName} />
       Number Order: <input type="number" onChange={AgentNumberOrder}/>
