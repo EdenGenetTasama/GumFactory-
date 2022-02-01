@@ -5,19 +5,19 @@ const MakeOrder = () => {
   const valuesOfContext = useContext(AgentContext);
 
   const AgentName = (event) => {
-    valuesOfContext.agentName = event.target.value;
+    valuesOfContext.info.agentName = event.target.value;
   };
 
   const AgentEmail = (event) => {
-    valuesOfContext.email = event.target.value;
+    valuesOfContext.info.email = event.target.value;
   };
 
   const AgentNumberOrder = (event) => {
-    valuesOfContext.numberOfOrders = event.target.value;
+    valuesOfContext.info.numberOfOrders = event.target.value;
   };
 
   const OnClickFunction=()=>{
-    valuesOfContext({...valuesOfContext});
+    valuesOfContext.setInfo(valuesOfContext.info.agentName ,valuesOfContext.info.email,valuesOfContext.info.numberOfOrders);
     console.log(valuesOfContext)
   }
 
