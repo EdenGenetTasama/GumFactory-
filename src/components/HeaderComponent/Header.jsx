@@ -6,7 +6,7 @@ const Header = () => {
     const ValuesFromContext = useContext(AgentContext);
   return (
     <div className="header">
-      This is header {ValuesFromContext.agentName}
+      This is header {ValuesFromContext.info.agentName}
     </div>
   );
 };

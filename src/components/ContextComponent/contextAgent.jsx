@@ -2,11 +2,13 @@ import React, { useState } from "react"
 
 export const AgentContext = React.createContext();
 
-const ContextProvider=(props)=>{
-const [info , setInfo] = useState({agentName: " " , numberOfOrders: 0 , email: " "})
+const ObjectUser= {agentName: "" , numberOfOrders: 0 , email: " "};
+
+const ContextProvider=({children})=>{
+const [info , setInfo] = useState(ObjectUser);
     return(
         <AgentContext.Provider value={{info,setInfo}}>
-            {props.children}
+            {children}
         </AgentContext.Provider>
     )
 }
