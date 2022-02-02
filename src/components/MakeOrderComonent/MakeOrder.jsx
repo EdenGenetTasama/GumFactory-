@@ -4,18 +4,6 @@ import { AgentContext } from "../ContextComponent/contextAgent";
 const MakeOrder = () => {
   const {info,setInfo} = useContext(AgentContext);
 
-  // const AgentName = (event) => {
-  //   info.agentName = event.target.value;
-  // };
-
-  // const AgentEmail = (event) => {
-  //   info.email = event.target.value;
-  // };
-
-  // const AgentNumberOrder = (event) => {
-  //   info.numberOfOrders = event.target.value;
-  // };
-
   const changeInfo=(event)=>{
     info[event.target.name] = event.target.value;
     console.log(info[event.target.name]);

@@ -5,7 +5,7 @@ const Orders = () => {
   const {info,setInfo} = useContext(AgentContext);
 
 const UpInOne=()=>{
-    setInfo(parseInt(info.numberOfOrders)+1);
+    setInfo({...info.numberOfOrders+1});
     console.log(info.numberOfOrders);
 }
 
